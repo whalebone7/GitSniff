@@ -13,3 +13,9 @@ This script uses a GitHub access token to search for a keyword within a specifie
 
 => `./gitsniff.sh`
 
+# Advanced Usage:
+
+If you have a list of keywords (github_dorks) you want to test, I recommend the following bash one liner: 
+
+$`For K in $(<Keywords.txt); do ( ./gitsniff.sh -k ""$K"" -at "your_github_access_token" -n "Company_Name"); done`
+
